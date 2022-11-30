@@ -157,6 +157,14 @@ header{
   width:1550px;
 }
 
+.contenu6{
+  margin-left:30px;
+  width:1550px;
+  margin-top:8%;
+
+}
+
+
 .info2{
   display: grid;
   right: 20%;
@@ -325,4 +333,89 @@ a{
 
 .btn-dsc:hover{
   background-color:#951412;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:900px;
+}
+
+.titre-basic{
+  color:white;
+  font-size:25px;
+  text-align:center;
+}
+.titre-standart{
+  color:white;
+  font-size:25px;
+  text-align:center;
+}
+.titre-premium{
+  color:white;
+  font-size:25px;
+  text-align:center;
+}
+
+.box-basic{
+  border-radius: 50px;
+  height:450px;
+  width:400px;
+  background-color:#363434;
+}
+
+.box-basic:hover{
+  box-shadow: 0px 5px 5px #fff;
+  transition: .2s;
+}
+
+.box-standart{
+  border-radius: 50px;
+  height:450px;
+  width:400px;
+  background-color:#363434;
+}
+
+.box-standart:hover{
+  box-shadow: 0px 5px 5px #6302f5;
+  transition: .2s;
+}
+
+.box-premium{
+  border-radius: 50px;
+  height:450px;
+  width:400px;
+  background-color:#363434;
+}
+
+.box-premium:hover{
+  box-shadow: 0px 5px 5px #850000;
+  transition: .2s;
+}
+
+.cont{
+  display: block;
+  margin-left:5%;
+  color:white;
+  margin-top:15%;
+  line-height:30px;
+}
+
+.prix{
+  display:block;
+  text-align:center;
+  color:white;
+  margin-top:25%;
+}
+
+.pied-page{
+  width:100%;
+  background-color:#000;
+  height:80px;
+}
+
+.try{
+  display:block;
+  height:80vh;
 }

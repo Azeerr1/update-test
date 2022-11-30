@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carroussel.css">
     <link rel="stylesheet" href="styles/slide.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/carroussel.js" defer></script>
     <title>Wicaebeth™ · Optimization Server</title>
 </head>
 <body>
-    <img class="image" src="images/background.png">
+    <!--<img class="image" data-active src="images/background.png">
+    <img class="image" src="images/background2.png">
+    <img class="image" src="images/background3.png">-->
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" id="nexter" data-carousel-button="next">&#8658;</button>
+            <a href="index.html#services"><button class="carousel-point" >&#8659;</button></a>
+            <ul data-slides>
+            <li class="slide1" data-active>
+              <img src="images/background.png" >
+            </li>
+            <li class="slide1">
+              <img src="images/background2.png" >
+            <li class="slide1">
+              <img src="images/background3.png" >
+            </li>
+          </ul>
+        </div>
+      </section>
     <header>
         <div class="logo">Wicaebeth™</div>
         <div class="hamburger">
@@ -103,13 +124,13 @@
     </div>
 
 
-
+<div class="try">
     <div class="block reveal-1">
         <div id="optimisation" class="services">
-            <p class="titre">Optimisation</p>
-            <hr class="pr">
+                <p class="titre">Optimisation</p>
+                <hr class="pr">
         </div>
-        <div class="contenu reveal-2">
+        <div class="contenu6 reveal-2">
             <div class="second-titre">Qui suis-je ?</div>
             <div class="text">Je m’appelle Théo, j’ai 20 ans et suite à plusieurs expériences dans des magasins spécialisés, j’ai pu découvrir et apprendre l’overclocking, l’hardware, et l’optimisation PC. 
                 Je me suis spécialisé, à l’aide de mes recherches, dans l’optimisation PC et j’ai ouvert mon propre discord d’optimisation.
@@ -129,6 +150,7 @@
 
         </div>
     </div>
+</div>
 
     <div class="transition-offer">
         <div class="first-text">         
@@ -136,19 +158,80 @@
         </div>
     </div>
 
-    <div class="block reveal-1">
+ <div class="block reveal-1">
         <div id="offres" class="services">
             <p class="titre">Offres</p>
+            <hr class="pr">
         </div>
-        <div class="contenu reveal-2">
-            <img src="images/table.png" width="100%">
+<div class="box-container">
+    <div class="box-basic">
+        <div class="titre-basic">BASIC</div>
+        <div class="cont">
+            <li>- Désinstallation des surchouches de Windows</li>
+            <li>- Réglages panneau Nvidia</li>
+            <li>- Optimisation des disques</li>
+            <li>- Optimisation basic de votre Windows</li>
+            <li>- Optimisation de votre RAM</li>
+            <li>- Mise à jour des pilotes</li>
         </div>
+        <div class="prix">15€ TTC</div>
     </div>
+    <div class="box-standart">
+        <div class="titre-standart">STANDART</div>
+        <div class="cont">
+            <li>- Pack Basic</li>
+            <li>- Optimisation avancée de votre Windows</li>
+            <li>- Optimisation de votre GPU</li>
+            <li>- Optimisation du démarrage</li>
+            <li>- De-bloating de Driver</li>
+            <li>- Fix Clock de votre GPU</li>
+        </div>
+        <div class="prix">30€ TTC</div>
+    </div>
+    <div class="box-premium">
+        <div class="titre-premium">PREMIUM</div>
+        <div class="cont">
+            <li>- Pack Basic & Standart</li>
+            <li>- Optimisation ISO custom (Facultatif)</li>
+            <li>- Optimisation de votre BIOS</li>
+            <li>- Optimisation de votre CPU</li>
+            <li>- Désactivation du Powersaving (Drivers et Matériel)</li>
+            <li>- Config Regedit personnalisé</li>
+        </div>
+        <div class="prix">45€ TTC</div>
+    </div>
+</div>
+</div>
+
+<div class="pied-page">
+    <div class="s1">
+
+    </div>
+    <div class="s2">
+
+    </div>
+    <div class="s3">
+
+    </div>
+</div>
+
 
     </div>
     <div id="scroll_to_top">
       <a href='#'><img src="images/scrolltop.png" alt="" /></a>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  
+   function nexterr(){
+     $(document).ready(function(){
+     $('#nexter').trigger('click');
+     });
+     console.log('+1 slide');
+   }
+  window.setInterval(nexterr, 10000);
+  </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
@@ -171,5 +254,7 @@
             navBar.classList.toggle("active");
         }
     </script>
+
+
 </body>
 </html>
